@@ -22,5 +22,5 @@ Using SQL I collected data on all product id's (over 50K!) and manipulated the d
 Being able to show the seller which of their opportunities was highly likely to close made it actionable. This was extremely exciting as we could now give the seller the ability to prioritize opportunities so they could determine where to invest their time and efforts wisely.
 
 ### Building an interactive Demo
-To demonstrate how the analytics could be leveraged, I built a web app that contained visualizations and explanations of the analysis so the stakeholders could interact with the solution and dream of the possibilities.
-
+To demonstrate how the analytics could be leveraged, I built a web app that contained visualizations and explanations of the analysis so the stakeholders could interact with the solution and dream of the possibilities. I used a combination of HTML, CSS, jQuery, Bootstrap and Highcharts.js. All of the data points are hard coded into the HTML file.
+You can find my interactive visualization here:
