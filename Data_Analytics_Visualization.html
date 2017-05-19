@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-left" data-offset="50">
+<!--NAVBARS Start -->
+	<nav id="affix"class="navbar-inverse navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Data Analysis</a>
+			</div>
+		</div>
+    </nav>
+	<div class="navbar-inverse navbar-fixed-left">
+		<a class="navbar-brand" href="#top">INTRO</a>
+			<ul class="nav navbar-nav">
+				<li><a  class="active" href="#decay">1. Coverage Decay Metric</a></li>
+				<li><a href="#analytics-meth">2. PID Analytics Overview Deck</a></li> 	
+				<li><a href="#analytics-applied">3. PID Analytics Applied</a></li>
+				<li><a href="#pmc-intro">4. Integration Overview Deck</a></li>
+				<li><a href="#pmc-by-exp">5. Views Applied</a></li>
+				<li><a href="#explorer">6. Expired Service Opportunity Explorer</a></li>
+			</ul>
+	</div>
+<!--NAVBARS Ends -->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="top" class="jumbotron">
+      <div class="container">
+        <h1>Technologies Inc</h1>
+		<h2>ID: ###### </h2>
+        <p>This interactive demo contains R&D data and documentation that Roberto Beltran performed during Q3FY17. The area of focus was Sales and Renewal Analytics in order to identify potential areas of opportunity, consolidation, enhanced visualization and insights that can help a client identify actionable opportunities that will generate them additional margin and will foster recurring revenue in the future. The documentation also highlights back-end strategies on how we can potentially integrate these views/insights into the platform.</p>
+	  </div>
+    </div>
+	<!--Main Jumbotron End-->
+	
+	<!--Start of Main Body Stuff -->
+		<!--Start of Panel #1 -->
+	<div class="container">
+		<hr id="decay"></hr>
+		<div id="myCarousel-2" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+		<div class="carousel-inner" role="listbox">
+        	<div class="item active">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">COVERAGE DECAY METRIC</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">Overall ability to retain ACTIVE Service Agreements</h3>
+					<div id="main" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">COVERAGE DECAY METRIC + PID Analytics</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">Overall ability to retain ACTIVE Service Agreements</h3>
+					<div id="main-pid-analytics" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>			
+		</div>
+		<a class="left carousel-control" href="#myCarousel-2" role="button" data-slide="prev" style="background:#FFFFFF">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel-2" role="button" data-slide="next" style="background:#FFFFFF">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+    </div><!-- /.carousel -->
+		
+		
+		
+		
+		
+		<hr id="analytics-meth"></hr>
+		<hr></hr>
+		<!--Start of Panel #2 -->	
+		<div>
+			<h1 class="text-primary" style="margin-right:100px; margin-left:100px;">PID ANALYTICS METHODOLOGY</h1>
+			<h3 style="margin-right:100px;  margin-left:100px;">Detailed deck removed for confidentiality</h3>	
+			<iframe src="https://softloom.com/wp-content/uploads/2016/06/analytics1-1.png" width="800" height="550" frameborder="0" style="margin-right:250px; margin-left:75px; width:900px; height:550px;" allowfullscreen webkitallowfullscreen msallowfullscreen> </iframe>
+		</div>
+			
+	<hr id="analytics-applied"></hr>
+	<div id="spacer"></div>
+	<hr></hr>
+      <!-- Example row of columns -->
+	<!--Start of Panel #2 -->	
+		<div id="myCarousel-3" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+		<div class="carousel-inner" role="listbox">
+        	<div class="item active">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">PID ANALYTICS APPLIED</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">TOTAL Opportunity (RR) by Expiration Date</h3>		
+					<div id="main-total-opp" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">PID ANALYTICS APPLIED</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">TOTAL Opportunity (RR) by Expiration Date + PID Analytics</h3>
+					<div id="main-total-75-opp" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>	
+			<div class="item">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">PID ANALYTICS APPLIED</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">Table Creation Code removed for confidentiality</h3>
+					<iframe src="https://softloom.com/wp-content/uploads/2016/06/analytics1-1.png" width="800" height="550" frameborder="0" style="margin-right:250px; margin-left:75px; width:900px; height:550px;" allowfullscreen webkitallowfullscreen msallowfullscreen> </iframe>
+				</div>
+			</div>			
+		</div>
+		<a class="left carousel-control" href="#myCarousel-3" role="button" data-slide="prev" style="background:#FFFFFF">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel-3" role="button" data-slide="next" style="background:#FFFFFF">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+    </div><!-- /.carousel -->
+	<hr id="pmc-intro"></hr>
+	<div id="spacer"></div>
+	<hr></hr>
+	<!--Start of Panel #2 -->	
+    <div>
+		<h1 class="text-primary" style="margin-right:100px; margin-left:100px;">INTEGRATION METHODOLOGY</h1>
+		<h3 style="margin-right:100px; margin-left:100px;">Detailed deck removed to preserve confidentiality</h3>		
+		<iframe src="https://softloom.com/wp-content/uploads/2016/06/analytics1-1.png" width="900" height="650" style="margin-right:150px; margin-left:75px; width:900px; height:550px;" allowfullscreen webkitallowfullscreen msallowfullscreen> </iframe>
+    </div><!-- /.carousel -->
+	<hr id="pmc-by-exp"></hr>
+	<div id="spacer"></div>
+	<hr></hr>
+	<!--Start of Panel #2 -->	
+    <div id="myCarousel-4" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">OPPORTUNITY VISIBLE IN PMC vs CRFP</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">TOTAL Opportunity (RR) by Expiration Date</h3>		
+					<div id="main-total-opp2" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">OPPORTUNITY VISIBLE IN PMC vs CRFP</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">RENEWALS by Opportunity Date</h3>
+					<div id="main-rr-opp" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container container-fluid">
+					<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">OPPORTUNITY VISIBLE IN PMC vs CRFP</h1>
+					<h3 style="margin-right:100px; margin-left:200px;">ATTACH by Opportunity Date</h3>
+					<div id="main-ar-opp" style="margin-right:100px; margin-left:150px; width:800px; height:550px;"></div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel-4" role="button" data-slide="prev" style="background:#FFFFFF">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel-4" role="button" data-slide="next" style="background:#FFFFFF">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+    </div><!-- /.carousel -->
+
+		<!-- Carousel
+    ================================================== -->
+	<hr id="explorer"></hr>
+	<div id="spacer"></div>
+	<hr></hr>
+	<div class="row">
+        <div class="col-md-12">
+			<h1 class="text-primary" style="margin-right:100px; margin-left:200px;">TOTAL EXPIRED OPPORTUNITY EXPLORER</h1>
+			<h2 style="margin-right:100px; margin-left:200px;">Total Opportunity Explorer by End Customer + PID Analytics</h2>
+			<div id="container" style="height: 600px; min-width: 1000px; max-width: 1000px; margin: 0 auto"></div>
+		</div>
+    </div>
+	
+    <footer>
+        <p>&copy; Roberto Beltran</p>
+    </footer>
+	</div> <!-- /container -->
+
+
+<!--Scripts for graphs-->
+
+<script>
+// Initialize affix and add an offset to add affix class on scroll
+$('#mainNav').affix({
+  offset: {
+    top: 100
+  }
+})
+</script>
+<script>
+// interval is in milliseconds. 1000 = 1 second - so 1000 * 10 = 10 seconds
+$('.carousel').carousel({
+  interval: 1000 * 1000
+});
+</script>
+
+<script>
+	$(function () { 
+		var myChart = Highcharts.chart('main', {
+		      
+        
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: ['2011', '2012', '2013','2014','2015','2016','2017'],
+						title: {
+					text: 'Year Shipped'
+				}
+			},
+
+			yAxis: {
+        min: 0,
+        max: 100,
+        startOnTick: false,
+        endOnTick: false,
+		title: {
+					text: '% ACTIVE'
+				}
+    },
+			series: [
+			{
+			type: 'column',
+			name: 'Performance',
+			color: '#33cccc',
+			data: [36.1, 76.2, 81, 90, 95,99.3,99.9]
+			}, {
+			type: 'spline',
+			name: 'Industry Average',
+			color: 'black',
+			dashStyle: 'longdash',
+			lineWidth: 3,
+			data: [75,80,85,88,93,94,98]
+			}, {
+			type: 'spline',
+			name: 'Industry Top',
+			color: 'green',
+			dashStyle: 'longdash',
+			lineWidth: 3,
+			data: [99,100,100,100,100,100,100]
+			}, {
+			type: 'spline',
+			name: 'Industry Bottom 33%',
+			color: 'red',
+			dashStyle: 'longdash',
+			lineWidth: 3,
+			data: [40,50.1,58.2,63.2,73.5,78.9,88.9]
+
+			}]
+		});
+	});
+</script>
+<script>
+	$(function () { 
+		var myChart = Highcharts.chart('main-pid-analytics', {
+		      
+        
+			chart: {
+				type: 'column',
+			},
+			title: {
+				text: ''
+			},
+			xAxis: {
+				categories: ['2011', '2012', '2013','2014','2015','2016','2017'],
+						title: {
+					text: 'Year Shipped'
+				}
+			},
+			 plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+			yAxis: {
+				min: 0,
+				max: 100,
+				startOnTick: false,
+				endOnTick: false,
+				title: {
+						text: '% ACTIVE'
+						}
+					},
+			series: [
+			{
+			type: 'column',
+			name: 'High Likelihood',
+			color: 'pink',
+			data: [11.5, 11.1, 3, 5.6, 3.4,0.3,0.003]
+			},{
+			type: 'column',
+			name: 'Performance',
+			color: '#33cccc',
+			data: [36.1, 76.2, 81, 90, 95,99.3,99.9]
+			}]
+		});
+	});
+</script>
+<script> <!-- Place Holder for Drill trial -->
+	$(function () { 
+		var myChart = Highcharts.chart('main-total-opp', {
+		      
+        
+			chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+		yAxis: {
+			max: 5000000,
+			title: { text: 'Service Net $ Value'
+			}
+		},
+
+        legend: {
+            enabled: true
+        },
+		
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        color: 'white',
+                        textShadow: '0 0 2px black, 0 0 2px black'
+                    }
+                },
+                stacking: 'normal'
+            }
+        },
+
+        series: [{
+        name: 'EXPIRED OPP',
+        color: '#ff0066',
+        data: [{
+            name: '2011',
+            y: 2425.6
+,
+            drilldown: false
+        },{
+            name: '2012',
+            y: 26193.62
+,
+            drilldown: false
+        },{
+            name: '2013',
+            y: 126145.31
+,
+            drilldown: false
+        },{
+            name: '2014',
+            y: 501082.13
+,
+            drilldown: false
+        },{
+            name: '2015',
+            y: 830792.015
+,
+            drilldown: false
+        },{
+            name: '2016',
+            y: 2390809.135
+,
+            drilldown: false
+        },{
+            name: '2017',
+            y: 104915.25
+,
+            drilldown: false
+        },{
+            name: '2018',
+            y: 705.34
+,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 8698.83
+,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 4205.76
+,
+            drilldown: false
+        }]
+        },{
+        name: 'FUTURE OPP',
+        color: '#33cccc',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2016',
+            y: 239.94,
+            drilldown: false
+        }, {
+            name: '2017',
+            y: 4283235.651
+,
+            drilldown: false
+        },{
+            name: '2018',
+            y: 1514556.03
+,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 3045631.42
+,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 694299.78
+,
+            drilldown: false
+        },{
+            name: '2021',
+            y: 29278.84
+,
+            drilldown: false
+        }]
+    }],
+
+
+    })
+	});
+</script>
+
+
+<script> <!-- Place Holder for Drill trial -->
+	$(function () { 
+		var myChart = Highcharts.chart('main-total-75-opp', {
+			chart: {
+            type: 'column',
+			zoomType: 'xy',
+        },
+        title: {
+            text: ''
+        },
+		xAxis: {
+			type: 'category'
+		},
+		yAxis: {
+			title: { text: 'Service Net $ Value'
+			}
+		},
+
+        legend: {
+            enabled: true
+        },
+		tooltip: {
+        useHTML: true,
+        headerFormat: '<table>',
+        pointFormat: '<tr><th colspan="2"><h4>{point.name}</h4></th></tr>' +
+            '<tr><th>Total Network Score:</th><td>{point.x}</td></tr>' +
+            '<tr><th>Expired Score:</th><td>{point.y}</td></tr>' +
+            '<tr><th>EXPIRED SERV AGGR OPP:</th><td>${point.z}</td></tr>',
+        footerFormat: '</table>',
+        followPointer: true
+    },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        color: 'white',
+                        textShadow: '0 0 2px black, 0 0 2px black'
+                    }
+                },
+                stacking: 'normal'
+            }
+        },
+
+        series: [{
+        name: 'EXPIRED 85% or > PID-COV',
+        color: '#ffcce0',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 2604,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 4874.82,
+            drilldown: '2013-3'
+        }, {
+            name: '2014',
+            y: 105902.92,
+            drilldown: '2014-3'
+        }, {
+            name: '2015',
+            y: 284576.96,
+            drilldown: '2015-3'
+        }, {
+            name: '2016',
+            y: 745714.87,
+            drilldown: '2016-3'
+        }, {
+            name: '2017',
+            y: 81459.14,
+            drilldown: false
+        },{
+            name: '2018',
+            y: 318.61,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 8698.83,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 4004.16,
+            drilldown: false
+        }]
+        },{
+        name: 'EXPIRED OPP',
+        color: '#ff0066',
+        data: [{
+            name: '2011',
+            y: 2425.6
+,
+            drilldown: false
+        },{
+            name: '2012',
+            y: 23589.62,
+            drilldown: false
+        },{
+            name: '2013',
+            y: 121270.49,
+            drilldown: '2013-3'
+        },{
+            name: '2014',
+            y: 395179.21,
+            drilldown: '2014-3'
+        },{
+            name: '2015',
+            y: 546215.05,
+            drilldown: '2015-3'
+        },{
+            name: '2016',
+            y: 1645094,
+            drilldown: '2016-3'
+        },{
+            name: '2017',
+            y: 23456.11,
+            drilldown: false
+        },{
+            name: '2018',
+            y: 386.73,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 0,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 201.6,
+            drilldown: false
+        }]
+        }, {
+        name: 'FUTURE OPP 85%> PID-COV',
+        color: '#d6f5f5',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2016',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2017',
+            y: 2176259.8,
+            drilldown: '2017-3'
+        },{
+            name: '2018',
+            y: 840639.67,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 1769265.89,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 501946.39,
+            drilldown: false
+        },{
+            name: '2021',
+            y: 29040.84,
+            drilldown: false
+        }]
+        },{
+        name: 'FUTURE OPP',
+        color: '#33cccc',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2016',
+            y: 239.94,
+            drilldown: false
+        }, {
+            name: '2017',
+            y: 2106975.85,
+            drilldown: '2017-3'
+        },{
+            name: '2018',
+            y: 673916.36,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 1276365.53,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 192353.39,
+            drilldown: false
+        },{
+            name: '2021',
+            y: 238,
+            drilldown: false
+        }]
+    }],
+	
+			drilldown: {
+				activeDataLabelStyle: {
+                color: 'white',
+                textShadow: '0 0 2px black, 0 0 2px black'
+										},
+				series: [{
+					id: '2016-3',
+					colorByPoint: true,
+					type:'bubble',
+					name: '2016 Expired SA Drilldown by End Customer',
+					data: 	[{ x: 115.68098665019, y: 177.131189156803, z: 2055.1, name: 'Dummy Name'},
+								{ x: 76.7835851059165, y: 87.6180286639829, z: 21050.25, name: 'Dummy Name'},
+								{ x: 77.4932493249325, y: 77.4932493249325, z: 254.12, name: 'Dummy Name'},
+								{ x: 8.48025881284751, y: 64.4739229024943, z: 396, name: 'Dummy Name'},
+								{ x: 71.3316785198596, y: 130.529411764706, z: 3447.6, name: 'Dummy Name'},
+								{ x: 35.5287469905728, y: 35.5287469905728, z: 3369.68, name: 'Dummy Name'},
+								{ x: 77.4932493249325, y: 77.4932493249325, z: 303.3, name: 'Dummy Name'},
+								{ x: 94.7609491256532, y: 87.220675944334, z: 1271.32, name: 'Dummy Name'},
+								{ x: 84.9158401633313, y: 43.791569137241, z: 4175.43, name: 'Dummy Name'},
+								{ x: 85.4749312601664, y: 63.5070272367777, z: 823.45, name: 'Dummy Name'},
+								{ x: 82.49920552488, y: 78.8157292234047, z: 1020.75, name: 'Dummy Name'},
+								{ x: 72.5727050837834, y: 74.9204800854, z: 7472.73, name: 'Dummy Name'},
+								{ x: 55.1606097331826, y: 55.1606097331827, z: 7336, name: 'Dummy Name'},
+								{ x: 89.4779312086721, y: 36.1719977376782, z: 646, name: 'Dummy Name'},
+								{ x: 92.968257689271, y: 56.3653705110925, z: 532.54, name: 'Dummy Name'},
+								{ x: 62.3641902903439, y: 39.5843656557027, z: 1043.46, name: 'Dummy Name'},
+								{ x: 76.5436640210265, y: 76.5436640210265, z: 2538.95, name: 'Dummy Name'},
+								{ x: 63.7582282651672, y: 70.1923076923077, z: 937.55, name: 'Dummy Name'},
+								{ x: 73.0252978390127, y: 80.062925170068, z: 1307.3, name: 'Dummy Name'},
+								{ x: 105.429657172271, y: 67.7275797481268, z: 2312.45, name: 'Dummy Name'},
+								{ x: 87.426523297491, y: 87.426523297491, z: 441.36, name: 'Dummy Name'},
+								{ x: 88.1952086028082, y: 63.9528050497168, z: 5867.66, name: 'Dummy Name'},
+								{ x: 48.6685236768802, y: 48.6685236768802, z: 475.2, name: 'Dummy Name'},
+								{ x: 60.7432898413604, y: 78.9753846153846, z: 1328, name: 'Dummy Name'},
+								{ x: 117.542370003741, y: 71.5605407125457, z: 3282.32, name: 'Dummy Name'},
+								{ x: 77.7196138214915, y: 77.7196138214915, z: 738.65, name: 'Dummy Name'},
+								{ x: 95.7172599059772, y: 95.7172599059772, z: 299.2, name: 'Dummy Name'},
+								{ x: 87.7579188419867, y: 111.28174357405, z: 1892.22, name: 'Dummy Name'},
+								{ x: 83.8077555562843, y: 107.044684860336, z: 5372.35, name: 'Dummy Name'},
+								{ x: 86.1597938144331, y: 86.1597938144331, z: 59440.0799999999, name: 'Dummy Name'},
+								{ x: 90.8331258244212, y: 92.2812674591705, z: 52169.95, name: 'Dummy Name'},
+								{ x: 110.203046868379, y: 102.277903965319, z: 654.6, name: 'Dummy Name'},
+								{ x: 96.434228423596, y: 95.8440921934175, z: 56151.98, name: 'Dummy Name'},
+								{ x: 75.796091710812, y: 88.0169325288945, z: 13971.68, name: 'Dummy Name'},
+								{ x: 89.8880748372772, y: 46.6857142857143, z: 1007.43, name: 'Dummy Name'},
+								{ x: 89.8177028665279, y: 50.2328030276628, z: 1538.61, name: 'Dummy Name'},
+								{ x: 71.2383935112592, y: 83, z: 938.4, name: 'Dummy Name'},
+								{ x: 137.806003816646, y: 98.5913142165359, z: 7706.55, name: 'Dummy Name'},
+								{ x: 146.835430108423, y: 107.022367194781, z: 204, name: 'Dummy Name'},
+								{ x: 114.844036030801, y: 114.844036030801, z: 251.76, name: 'Dummy Name'},
+								{ x: 77.4544434292019, y: 28.9685412026726, z: 44, name: 'Dummy Name'},
+								{ x: 107.334609744051, y: 43.0147151086523, z: 77.81, name: 'Dummy Name'},
+								{ x: 177.106189659132, y: 177.106189659132, z: 2796.5, name: 'Dummy Name'},
+								{ x: 34.982808156241, y: 48.288518155054, z: 918, name: 'Dummy Name'},
+								{ x: 64.4583772391992, y: 64.4583772391992, z: 336.6, name: 'Dummy Name'},
+								{ x: 84.3918506222964, y: 65.3336260709084, z: 827586.240000014, name: 'Dummy Name'},
+								{ x: 147.697594593034, y: 65.9350722994046, z: 238, name: 'Dummy Name'},
+								{ x: 81.0501237342836, y: 61.7362073675991, z: 1153.31, name: 'Dummy Name'},
+								{ x: 73.0061295478145, y: 71.4352455094542, z: 1911.88, name: 'Dummy Name'},
+								{ x: 42.4669463586867, y: 82, z: 93.87, name: 'Dummy Name'},
+								{ x: 69.5712962559865, y: 57.7634557859319, z: 1656.27, name: 'Dummy Name'},
+								{ x: 111.37493500759, y: 62.9024888884441, z: 9005.88, name: 'Dummy Name'},
+								{ x: 83.101342609207, y: 24.8084529665696, z: 113.83, name: 'Dummy Name'},
+								{ x: 64.659919006292, y: 37.6630447749771, z: 1835.46, name: 'Dummy Name'},
+								{ x: 65.4493785538166, y: 6.03308944678204, z: 1608.68, name: 'Dummy Name'},
+								{ x: 106.468344149419, y: 153.237885462555, z: 1248, name: 'Dummy Name'},
+								{ x: 44.793547049164, y: 18.8948404436359, z: 942.71, name: 'Dummy Name'},
+								{ x: 73.3325449884773, y: 76.6530140726738, z: 218.31, name: 'Dummy Name'},
+								{ x: 90.6867580191176, y: 59.7557873362111, z: 1755.4, name: 'Dummy Name'},
+								{ x: 79.6225262601677, y: 77.620572812908, z: 176209.069999999, name: 'Dummy Name'},
+								{ x: 66.8941126681194, y: 48.7838882282996, z: 1492.73, name: 'Dummy Name'},
+								{ x: 87.3203712338409, y: 88.1833286464812, z: 4889.79, name: 'Dummy Name'},
+								{ x: 66.1974185064452, y: 71.2846828632426, z: 1003, name: 'Dummy Name'},
+								{ x: 49.5927938790172, y: 98.764192139738, z: 367.17, name: 'Dummy Name'},
+								{ x: 244.423640590988, y: 92.3006076830577, z: 1504.5, name: 'WINDSOR PROPERTIES INC'}				
+							]
+						},
+						{
+					
+					id: '2017-3',
+					colorByPoint: true,
+					type:'bubble',
+					name: '2017 Expiring SA Drilldown by End Customer',
+					data: 	[	{ x: 115.68098665019, y: 114.579048263003, z: 101446.319999999, name: 'Dummy Name'},
+								{ x: 98.0600030814858, y: 98.0600030814865, z: 9263.25, name: 'Dummy Name'},
+								{ x: 48.7838882282996, y: 48.7838882282996, z: 386.1, name: 'Dummy Name'},
+								{ x: 67.6976595106028, y: 67.6976595106028, z: 4796.55, name: 'Dummy Name'},
+								{ x: 76.7835851059165, y: 77.7504640177164, z: 73997.34, name: 'Dummy Name'},
+								{ x: 163.117072908011, y: 163.103966586627, z: 100344.94, name: 'Dummy Name'},
+								{ x: 126.949880668258, y: 126.949880668258, z: 696, name: 'Dummy Name'},
+								{ x: 71.3316785198596, y: 92.3016958249615, z: 43894.58, name: 'Dummy Name'},
+								{ x: 77.4932493249325, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 94.7609491256532, y: 58.8942820246498, z: 56805.59, name: 'Dummy Name'},
+								{ x: 77.4932493249325, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 84.9158401633313, y: 96.631699428693, z: 14841.47, name: 'Dummy Name'},
+								{ x: 85.4749312601664, y: 86.8155014720792, z: 68467.97, name: 'Dummy Name'},
+								{ x: 97.8570550019804, y: 102.748579266216, z: 484.5, name: 'Dummy Name'},
+								{ x: 77.4932493249325, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 82.49920552488, y: 86.7713997304694, z: 25567.43, name: 'Dummy Name'},
+								{ x: 80.5354573623938, y: 93.8597956639523, z: 2249.95, name: 'Dummy Name'},
+								{ x: 101.909137205488, y: 101.909137205488, z: 45983.36, name: 'Dummy Name'},
+								{ x: 101.239914372919, y: 101.239914372919, z: 75811.1199999998, name: 'Dummy Name'},
+								{ x: 174.499779895643, y: 68.9901678245703, z: 907.8, name: 'Dummy Name'},
+								{ x: 152.072388837831, y: 152.072388837831, z: 377.4, name: 'Dummy Name'},
+								{ x: 122.074462409072, y: 122.074462409072, z: 58069.99, name: 'Dummy Name'},
+								{ x: 89.4779312086721, y: 84.6499035580466, z: 31478.41, name: 'Dummy Name'},
+								{ x: 65.4321212437026, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 87.7555932879228, y: 123.676098535286, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.4690279523505, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.2463494423999, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.4690279523505, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.7688582409386, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.6914938762618, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 92.968257689271, y: 87.8649565109374, z: 90870.1100000001, name: 'Dummy Name'},
+								{ x: 62.3641902903439, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 67.001470838638, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.3547754390097, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 64.2934613410148, y: 77.4932493249325, z: 1334.62, name: 'Dummy Name'},
+								{ x: 65.4321212437026, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.1708034757488, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.3508366767262, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.610679560014, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 77.6459047025849, y: 77.6459047025849, z: 259.05, name: 'Dummy Name'},
+								{ x: 105.429657172271, y: 100.070753526235, z: 48953.52, name: 'Dummy Name'},
+								{ x: 88.1952086028082, y: 89.0699636992598, z: 265087.12, name: 'Dummy Name'},
+								{ x: 153.579681325598, y: 53.2172830172235, z: 115.14, name: 'Dummy Name'},
+								{ x: 117.542370003741, y: 127.587813211845, z: 41168.38, name: 'Dummy Name'},
+								{ x: 87.3510085534925, y: 39.5843656557027, z: 385.05, name: 'Dummy Name'},
+								{ x: 75.5182322777644, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 90.8331258244212, y: 92.7474646372087, z: 1153.6, name: 'Dummy Name'},
+								{ x: 110.203046868379, y: 123.676098535286, z: 385.05, name: 'Dummy Name'},
+								{ x: 131.302041366865, y: 142.627875619413, z: 2066.25, name: 'Dummy Name'},
+								{ x: 75.796091710812, y: 73.9408214773018, z: 92032.78, name: 'Dummy Name'},
+								{ x: 89.8880748372772, y: 105.29292708585, z: 15638.33, name: 'Dummy Name'},
+								{ x: 92.5512394826514, y: 85.8644561175967, z: 53682.29, name: 'Dummy Name'},
+								{ x: 13.8940092165899, y: 13.8940092165899, z: 1038.7, name: 'Dummy Name'},
+								{ x: 122.489677574244, y: 122.489677574244, z: 537.2, name: 'Dummy Name'},
+								{ x: 89.8177028665279, y: 98.3500434759614, z: 22452.28, name: 'Dummy Name'},
+								{ x: 137.806003816646, y: 141.717011895431, z: 289934.12, name: 'Dummy Name'},
+								{ x: 48.7838882282996, y: 48.7838882282996, z: 649.84, name: 'Dummy Name'},
+								{ x: 146.835430108423, y: 287.555555310137, z: 536.35, name: 'Dummy Name'},
+								{ x: 49.7171643960233, y: 49.7365629692134, z: 26127.67, name: 'Dummy Name'},
+								{ x: 77.4544434292019, y: 95.9393939393939, z: 18.46, name: 'Dummy Name'},
+								{ x: 67.1011393531786, y: 64.9013300363268, z: 7066.99, name: 'Dummy Name'},
+								{ x: 107.334609744051, y: 90.8513488206384, z: 51191.99, name: 'Dummy Name'},
+								{ x: 84.3918506222964, y: 78.3117831282486, z: 1103364.22999999, name: 'Dummy Name'},
+								{ x: 81.0501237342836, y: 61.4992783149724, z: 301680.300000003, name: 'Dummy Name'},
+								{ x: 65.454012666259, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 65.3856455957785, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 53.8958565411267, y: 56.3293080277957, z: 5554.53, name: 'Dummy Name'},
+								{ x: 66.3817041215505, y: 66.3817041215506, z: 24116.27, name: 'Dummy Name'},
+								{ x: 42.4669463586867, y: 127.342857142857, z: 28.05, name: 'Dummy Name'},
+								{ x: 126.949880668258, y: 126.949880668258, z: 348.5, name: 'Dummy Name'},
+								{ x: 82.8439276485788, y: 82.8439276485788, z: 5899.85, name: 'Dummy Name'},
+								{ x: 48.7838882282996, y: 48.7838882282996, z: 2353.55, name: 'Dummy Name'},
+								{ x: 93.8073581014606, y: 93.8073581014606, z: 1295.4, name: 'Dummy Name'},
+								{ x: 73.4005483958501, y: 73.4005483958501, z: 1029, name: 'Dummy Name'},
+								{ x: 112.952350409516, y: 33.8462687654429, z: 299.2, name: 'Dummy Name'},
+								{ x: 276.858540488094, y: 236.678957353221, z: 770.96, name: 'Dummy Name'},
+								{ x: 69.5712962559865, y: 73.3487271863284, z: 9733.35, name: 'Dummy Name'},
+								{ x: 79.9222567706206, y: 86.7943277311343, z: 38251.71, name: 'Dummy Name'},
+								{ x: 101.999580140327, y: 102.485082751575, z: 198085.55, name: 'Dummy Name'},
+								{ x: 102.488009340305, y: 100.041213641695, z: 5351.88, name: 'Dummy Name'},
+								{ x: 111.37493500759, y: 144.445637156881, z: 18703.4, name: 'Dummy Name'},
+								{ x: 68.7376794432438, y: 68.4999779147683, z: 520756.32, name: 'Dummy Name'},
+								{ x: 64.8517321449392, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 76.7129783447664, y: 192.807197104103, z: 4400.45, name: 'Dummy Name'},
+								{ x: 65.2776296296296, y: 65.2776296296296, z: 447.46, name: 'Dummy Name'},
+								{ x: 83.101342609207, y: 93.441926345609, z: 924.9, name: 'Dummy Name'},
+								{ x: 86.8733998009662, y: 83.8436468747075, z: 16836, name: 'Dummy Name'},
+								{ x: 64.659919006292, y: 60.9379745645175, z: 6351.18, name: 'Dummy Name'},
+								{ x: 65.4493785538166, y: 74.7211697439599, z: 10082.3, name: 'Dummy Name'},
+								{ x: 106.468344149419, y: 136.841774755412, z: 7008.44, name: 'Dummy Name'},
+								{ x: 44.793547049164, y: 18.2687389459095, z: 459, name: 'Dummy Name'},
+								{ x: 72.8184840311033, y: 72.8184840311033, z: 2769.3, name: 'Dummy Name'},
+								{ x: 73.3325449884773, y: 80.1649321810374, z: 38991.6, name: 'Dummy Name'},
+								{ x: 79.6225262601677, y: 89.3518900788634, z: 356065.309999998, name: 'Dummy Name'},
+								{ x: 87.4479907099351, y: 87.4479907099351, z: 3921.26, name: 'Dummy Name'},
+								{ x: 87.5970410983322, y: 93.2544887430342, z: 2151.27, name: 'Dummy Name'},
+								{ x: 80.3900835975401, y: 80.6005411781831, z: 23257.7, name: 'Dummy Name'},
+								{ x: 87.3203712338409, y: 88.4860473156188, z: 40644.45, name: 'Dummy Name'},
+								{ x: 159.585002229069, y: 18.2687389459095, z: 85, name: 'Dummy Name'},
+								{ x: 66.1974185064452, y: 66.2465731313633, z: 24162, name: 'Dummy Name'},
+								{ x: 123.676098535286, y: 123.676098535286, z: 1043.46, name: 'Dummy Name'},
+								{ x: 80.4587258884875, y: 89.4375014759483, z: 9797.95, name: 'Dummy Name'},
+								{ x: 65.6914938762618, y: 77.4932493249325, z: 1043.46, name: 'Dummy Name'},
+								{ x: 244.423640590988, y: 260.833333333333, z: 10.2, name: 'WINDSOR PROPERTIES INC'}
+							]
+						},{
+					
+					id: '2015-3',
+					colorByPoint: true,
+					type:'bubble',
+					name: '2015 Expired SA Drilldown by End Customer',
+					data: 	[	{ x: 67.9488305949872, y: 67.9488305949872, z: 9463.68, name: 'Dummy Name'},
+								{ x: 76.7835851059165, y: 53.2062042640516, z: 7171.64, name: 'Dummy Name'},
+								{ x: 71.3316785198596, y: 50.5611973560476, z: 19658.2, name: 'Dummy Name'},
+								{ x: 94.7609491256532, y: 62.8544315002677, z: 6986.67, name: 'Dummy Name'},
+								{ x: 85.4749312601664, y: 73.1505614313117, z: 5979.75, name: 'Dummy Name'},
+								{ x: 82.49920552488, y: 65.4809467831955, z: 6013.99, name: 'Dummy Name'},
+								{ x: 80.5354573623938, y: 32.8094445285303, z: 628.15, name: 'Dummy Name'},
+								{ x: 72.5727050837834, y: 42.960339464529, z: 665.67, name: 'Dummy Name'},
+								{ x: 174.499779895643, y: 71.7428571428571, z: 761.6, name: 'Dummy Name'},
+								{ x: 92.968257689271, y: 69.1679819297287, z: 2178.11, name: 'Dummy Name'},
+								{ x: 66.8896600024103, y: 66.8896600024103, z: 3188.64, name: 'Dummy Name'},
+								{ x: 63.7582282651672, y: 60.8, z: 2039.15, name: 'Dummy Name'},
+								{ x: 73.0252978390127, y: 61.8510638297872, z: 203.15, name: 'Dummy Name'},
+								{ x: 105.429657172271, y: 107.422339593117, z: 16898, name: 'Dummy Name'},
+								{ x: 101.817271573684, y: 101.817271573684, z: 891.65, name: 'Dummy Name'},
+								{ x: 88.1952086028082, y: 49.1721566823856, z: 11165.19, name: 'Dummy Name'},
+								{ x: 153.579681325598, y: 88.8663450499404, z: 2252.12, name: 'Dummy Name'},
+								{ x: 117.542370003741, y: 61.7869265030403, z: 3359.15, name: 'Dummy Name'},
+								{ x: 15.2304930440093, y: 24.0686327028977, z: 110.5, name: 'Dummy Name'},
+								{ x: 87.7579188419867, y: 80.062925170068, z: 1184.9, name: 'Dummy Name'},
+								{ x: 83.8077555562843, y: 74.7105263157895, z: 259.25, name: 'Dummy Name'},
+								{ x: 92.3454074485466, y: 92.3454074485466, z: 5169.7, name: 'Dummy Name'},
+								{ x: 90.8331258244212, y: 80.6284104304805, z: 4017.95, name: 'Dummy Name'},
+								{ x: 120.314193548387, y: 120.314193548387, z: 543.07, name: 'Dummy Name'},
+								{ x: 96.434228423596, y: 70.7995704861354, z: 4563.534, name: 'Dummy Name'},
+								{ x: 56.4848484848485, y: 56.4848484848485, z: 2626.5, name: 'Dummy Name'},
+								{ x: 28.9837436985502, y: 32.7777777777778, z: 305.15, name: 'Dummy Name'},
+								{ x: 92.5512394826514, y: 28.9685412026726, z: 22.1, name: 'Dummy Name'},
+								{ x: 89.8177028665279, y: 53.9269743399044, z: 506.23, name: 'Dummy Name'},
+								{ x: 39.6684210526316, y: 39.6684210526316, z: 266.59, name: 'Dummy Name'},
+								{ x: 67.0019552875215, y: 67.0019552875215, z: 462.4, name: 'Dummy Name'},
+								{ x: 71.2383935112592, y: 70.3711203638126, z: 12726.2, name: 'Dummy Name'},
+								{ x: 137.806003816646, y: 4.03543163323226, z: 3991.76, name: 'Dummy Name'},
+								{ x: 70.2297449836488, y: 71.4862107882412, z: 760.22, name: 'Dummy Name'},
+								{ x: 146.835430108423, y: 87.4343914746764, z: 819.4, name: 'Dummy Name'},
+								{ x: 34.982808156241, y: 18.2687389459095, z: 724, name: 'Dummy Name'},
+								{ x: 84.3918506222964, y: 70.9311373058109, z: 34762.12, name: 'Dummy Name'},
+								{ x: 81.0501237342836, y: 29.5206948215829, z: 9612.3, name: 'Dummy Name'},
+								{ x: 73.0061295478145, y: 73.2505817153824, z: 12286.01, name: 'Dummy Name'},
+								{ x: 53.8958565411267, y: 34.5467873193625, z: 698.57, name: 'Dummy Name'},
+								{ x: 93.0326496709939, y: 93.0326496709939, z: 1227.2, name: 'Dummy Name'},
+								{ x: 76.2482993197279, y: 76.2482993197279, z: 543.07, name: 'Dummy Name'},
+								{ x: 59.4808372880398, y: 59.4808372880398, z: 1530.85, name: 'Dummy Name'},
+								{ x: 100.65376344086, y: 100.65376344086, z: 805.8, name: 'Dummy Name'},
+								{ x: 42.4669463586867, y: 16.0958257606848, z: 153, name: 'Dummy Name'},
+								{ x: 69.1217391304348, y: 69.1217391304348, z: 781.18, name: 'Dummy Name'},
+								{ x: 79.9222567706206, y: 48.2366414645155, z: 6993.06, name: 'Dummy Name'},
+								{ x: 101.999580140327, y: 66.728, z: 92.33, name: 'Dummy Name'},
+								{ x: 111.37493500759, y: 88.1623086683912, z: 9605.6, name: 'Dummy Name'},
+								{ x: 86.8733998009662, y: 86.159793814433, z: 1100.75, name: 'Dummy Name'},
+								{ x: 65.4493785538166, y: 67.7784941044059, z: 901.98, name: 'Dummy Name'},
+								{ x: 72.3884546362911, y: 79.6017964071856, z: 1540.2, name: 'Dummy Name'},
+								{ x: 44.793547049164, y: 44.6190305381811, z: 56764.67, name: 'Dummy Name'},
+								{ x: 79.6225262601677, y: 79.8734980985953, z: 7141.07000000001, name: 'Dummy Name'},
+								{ x: 130.529411764706, y: 130.529411764706, z: 165.3, name: 'Dummy Name'},
+								{ x: 66.1974185064452, y: 63.6144943721263, z: 2043.4, name: 'Dummy Name'},
+								{ x: 48.6685236768803, y: 48.6685236768803, z: 23811.8999999999, name: 'Dummy Name'},
+								{ x: 80.4587258884875, y: 42.78125, z: 1275, name: 'Dummy Name'},
+								{ x: 121.185527836895, y: 121.185527836895, z: 369.98, name: 'TIRE KINGDOM'}
+							]
+						},{
+					id: '2014-3',
+					colorByPoint: true,
+					type:'bubble',
+					name: '2014 Expired SA Drilldown by End Customer',
+					data: 	[	{ x: 76.7835851059165, y: 68.1490787269682, z: 18090.6, name: 'Dummy Name'},
+								{ x: 94.7609491256532, y: 46.4483442602951, z: 6574.25000000001, name: 'Dummy Name'},
+								{ x: 84.9158401633313, y: 85.3260869565217, z: 4129.2, name: 'Dummy Name'},
+								{ x: 92.968257689271, y: 46.3176486722279, z: 1235.9, name: 'Dummy Name'},
+								{ x: 73.0252978390127, y: 80.8826243130286, z: 1331.95, name: 'Dummy Name'},
+								{ x: 88.1952086028082, y: 18.2687389459095, z: 54.4, name: 'Dummy Name'},
+								{ x: 153.579681325598, y: 22.588720473679, z: 85, name: 'Dummy Name'},
+								{ x: 15.2304930440093, y: 40.8690376404425, z: 326.05, name: 'Dummy Name'},
+								{ x: 87.7579188419867, y: 64.0991178205028, z: 274.55, name: 'Dummy Name'},
+								{ x: 126.708068402357, y: 126.708068402357, z: 4289.36, name: 'Dummy Name'},
+								{ x: 96.434228423596, y: 97.0404648766597, z: 47987.63, name: 'Dummy Name'},
+								{ x: 48.5250329380764, y: 48.5250329380764, z: 4733.47, name: 'Dummy Name'},
+								{ x: 89.8177028665279, y: 54.4355301161361, z: 3180.7, name: 'Dummy Name'},
+								{ x: 70.2297449836488, y: 71.9467992075857, z: 4333.00000000001, name: 'Dummy Name'},
+								{ x: 47.3644964852052, y: 47.3644964852051, z: 3466.3, name: 'Dummy Name'},
+								{ x: 81.0501237342836, y: 22.9525921517349, z: 1896.22999999999, name: 'Dummy Name'},
+								{ x: 112.860850088237, y: 103.704210395626, z: 2446.3, name: 'Dummy Name'},
+								{ x: 64.2517694369846, y: 37.6763450042699, z: 1413.93, name: 'Dummy Name'},
+								{ x: 42.4669463586867, y: 34.0517617493032, z: 439.45, name: 'Dummy Name'},
+								{ x: 69.5712962559865, y: 64.4583772391992, z: 3366, name: 'Dummy Name'},
+								{ x: 79.9222567706206, y: 64.9263157894737, z: 1255.52, name: 'Dummy Name'},
+								{ x: 101.999580140327, y: 46.1397058823529, z: 84.99, name: 'Dummy Name'},
+								{ x: 62.9295825485072, y: 60.6364123265877, z: 5532.76, name: 'Dummy Name'},
+								{ x: 111.37493500759, y: 126.949880668258, z: 2652, name: 'Dummy Name'},
+								{ x: 88.7176571605663, y: 89.6705422519324, z: 35721.04, name: 'Dummy Name'},
+								{ x: 76.7129783447664, y: 56.2683312920987, z: 30479.7899999999, name: 'Dummy Name'},
+								{ x: 100.010976730714, y: 105.22966507177, z: 1960.21, name: 'Dummy Name'},
+								{ x: 86.8733998009662, y: 86.159793814433, z: 314.5, name: 'Dummy Name'},
+								{ x: 72.3884546362911, y: 53.6, z: 591.32, name: 'Dummy Name'},
+								{ x: 73.3325449884773, y: 5.2877552078925, z: 1505.96, name: 'Dummy Name'},
+								{ x: 79.6225262601677, y: 58.7656672834483, z: 42348.24, name: 'Dummy Name'},
+								{ x: 48.6685236768802, y: 48.6685236768802, z: 345.1, name: 'Dummy Name'},
+								{ x: 87.5970410983322, y: 72.9565849016955, z: 621.99, name: 'Dummy Name'},
+								{ x: 87.3203712338409, y: 89.0839500258496, z: 7405.2, name: 'Dummy Name'},
+								{ x: 80.4587258884875, y: 41.3069489185458, z: 1020, name: 'Dummy Name'},
+								{ x: 75.283372013769, y: 76.2889354013852, z: 16053.73, name: 'VITACOSTCOM INC'}
+							]
+						},{
+					id: '2013-3',
+					colorByPoint: true,
+					type:'bubble',
+					name: '2013 Expired SA Drilldown by End Customer',
+					data: 	[	{ x: 39.3148615809787, y: 39.3148615809787, z: 4214.6, name: 'Dummy Name'},
+								{ x: 8.48025881284751, y: 1.49039184565825, z: 1187.33, name: 'Dummy Name'},
+								{ x: 92.968257689271, y: 22.6865571393651, z: 1132.8, name: 'Dummy Name'},
+								{ x: 73.0252978390127, y: 75.0692539219704, z: 10883.3, name: 'Dummy Name'},
+								{ x: 113.689883913765, y: 113.689883913765, z: 376, name: 'Dummy Name'},
+								{ x: 60.7432898413604, y: 22.798589767246, z: 83.42, name: 'Dummy Name'},
+								{ x: 117.542370003741, y: 46.1627696285086, z: 3566.85, name: 'Dummy Name'},
+								{ x: 43.9813365754018, y: 54.884639653497, z: 9731.51, name: 'Dummy Name'},
+								{ x: 90.8331258244212, y: 92.7894068508408, z: 1231.51, name: 'Dummy Name'},
+								{ x: 96.434228423596, y: 63.8130749854143, z: 5181.04, name: 'Dummy Name'},
+								{ x: 89.8880748372772, y: 17.7777777777778, z: 2345.54, name: 'Dummy Name'},
+								{ x: 72.7692307692308, y: 72.7692307692308, z: 255.3, name: 'Dummy Name'},
+								{ x: 137.806003816646, y: 47.3749729070869, z: 1943.89, name: 'Dummy Name'},
+								{ x: 70.2297449836488, y: 19.777903719908, z: 166.4, name: 'Dummy Name'},
+								{ x: 146.835430108423, y: 48.7253289473684, z: 190.4, name: 'Dummy Name'},
+								{ x: 84.3918506222964, y: 81.6696428571429, z: 1392.8, name: 'Dummy Name'},
+								{ x: 81.0501237342836, y: 20.9743634239657, z: 1772.13, name: 'Dummy Name'},
+								{ x: 79.9222567706206, y: 21.4702581369248, z: 534.61, name: 'Dummy Name'},
+								{ x: 100.010976730714, y: 82.4498199068778, z: 582.52, name: 'Dummy Name'},
+								{ x: 44.793547049164, y: 42.110335263214, z: 209.52, name: 'Dummy Name'},
+								{ x: 73.3325449884773, y: 19.8454545454545, z: 3078.46, name: 'Dummy Name'},
+								{ x: 90.6867580191176, y: 18.2687389459095, z: 101.21, name: 'Dummy Name'},
+								{ x: 79.6225262601677, y: 66.881166886304, z: 32872.65, name: 'Dummy Name'},
+								{ x: 66.8941126681194, y: 72.7808430798234, z: 1197, name: 'Dummy Name'},
+								{ x: 87.3203712338409, y: 84.8824083910952, z: 14356.74, name: 'Dummy Name'},
+								{ x: 75.283372013769, y: 44.0468334636992, z: 516.8, name: 'VITACOSTCOM INC'}
+
+							]
+						}
+					]
+				}
+
+
+    })
+	});
+</script>
+
+
+<script> <!-- Place Holder for Drill trial -->
+	$(function () { 
+		var myChart = Highcharts.chart('main-total-opp2', {
+		      
+        
+			chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+		yAxis: {
+			max: 5000000,
+			title: { text: 'Service Net $ Value'
+			}
+		},
+
+        legend: {
+            enabled: true
+        },
+		
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        color: 'white',
+                        textShadow: '0 0 2px black, 0 0 2px black'
+                    }
+                },
+                stacking: 'normal'
+            }
+        },
+
+        series: [{
+        name: 'EXPIRED OPP',
+        color: '#ff0066',
+        data: [{
+            name: '2011',
+            y: 2425.6
+,
+            drilldown: false
+        },{
+            name: '2012',
+            y: 26193.62
+,
+            drilldown: false
+        },{
+            name: '2013',
+            y: 126145.31
+,
+            drilldown: false
+        },{
+            name: '2014',
+            y: 501082.13
+,
+            drilldown: false
+        },{
+            name: '2015',
+            y: 830792.015
+,
+            drilldown: false
+        },{
+            name: '2016',
+            y: 2390809.135
+,
+            drilldown: false
+        },{
+            name: '2017',
+            y: 104915.25
+,
+            drilldown: false
+        },{
+            name: '2018',
+            y: 705.34
+,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 8698.83
+,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 4205.76
+,
+            drilldown: false
+        }]
+        },{
+        name: 'FUTURE OPP',
+        color: '#33cccc',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2016',
+            y: 239.94,
+            drilldown: false
+        }, {
+            name: '2017',
+            y: 4283235.651
+,
+            drilldown: false
+        },{
+            name: '2018',
+            y: 1514556.03
+,
+            drilldown: false
+        },{
+            name: '2019',
+            y: 3045631.42
+,
+            drilldown: false
+        },{
+            name: '2020',
+            y: 694299.78
+,
+            drilldown: false
+        },{
+            name: '2021',
+            y: 29278.84
+,
+            drilldown: false
+        }]
+    }],
+
+
+    })
+	});
+</script>
+
+<script> <!-- Place Holder for Drill trial -->
+	$(function () { 
+		var myChart = Highcharts.chart('main-rr-opp', {
+		      
+        
+			chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category',
+			title: {text:'SERVICE EXPIRATION YEAR'}
+        },
+		yAxis: {
+			max: 5000000,
+			title: { text: 'Service Net $ Value'
+			}
+		},
+
+        legend: {
+            enabled: true
+        },
+		
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        color: 'white',
+                        textShadow: '0 0 2px black, 0 0 2px black'
+                    }
+                },
+                stacking: 'normal'
+            }
+        },
+
+        series: [{
+        name: 'CSPP EXPIRED RENEWAL OPP',
+        color: '#ffb3b3',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 1982914.97
+,
+            drilldown: '2016-1'
+        }, {
+            name: '2017',
+            y: 101186.51
+,
+            drilldown: '2017-1'
+        },{
+            name: '2018',
+            y: 0,
+            drilldown: '2018-1'
+        },{
+            name: '2019',
+            y: 0,
+            drilldown: '2019-1'
+        },{
+            name: '2020',
+            y: 0,
+            drilldown: '2020-1'
+        }]
+        },{
+        name: 'CRFP EXPIRED RENEWAL OPP',
+        color: '#ff0000',
+        data: [{
+            name: '2011',
+            y: 136640.44
+,
+            drilldown: false
+        },{
+            name: '2012',
+            y: 162213.83
+,
+            drilldown: '2012-1'
+        },{
+            name: '2013',
+            y: 294314.02
+,
+            drilldown: '2013-1'
+        },{
+            name: '2014',
+            y: 860114.96
+,
+            drilldown: '2014-1'
+        },{
+            name: '2015',
+            y: 1111739.3
+,
+            drilldown: '2015-1'
+        },{
+            name: '2016',
+            y: 836175.28
+,
+            drilldown: '2016-1'
+        },{
+            name: '2017',
+            y: 584.53
+,
+            drilldown: '2017-1'
+        },{
+            name: '2018',
+            y: 2213.27
+,
+            drilldown: '2018-1'
+        },{
+            name: '2019',
+            y: 8698.83
+
+,
+            drilldown: '2019-1'
+        },{
+            name: '2020',
+            y: 4205.76
+
+,
+            drilldown: '2020-1'
+        },{
+            name: '2021',
+            y: 0
+
+,
+            drilldown: '2021-1'
+        }]
+        }, {
+        name: 'CSPP RENEWAL OPP',
+        color: '#99ff99',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 119.97,
+            drilldown: '2016-1'
+        }, {
+            name: '2017',
+            y: 2885675.38,
+            drilldown: '2017-1'
+        },{
+            name: '2018',
+            y: 0,
+            drilldown: '2018-1'
+        },{
+            name: '2019',
+            y: 0,
+            drilldown: '2019-1'
+        },{
+            name: '2020',
+            y: 0,
+            drilldown: '2020-1'
+        },{
+            name: '2021',
+            y: 0
+,
+            drilldown: '2021-1'
+        }]
+        },{
+        name: 'CRFP FUTURE RENEWAL OPP',
+        color: '#00e600',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 0,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 0,
+            drilldown: '2016-1'
+        }, {
+            name: '2017',
+            y: 1643533.6,
+            drilldown: '2017-1'
+        },{
+            name: '2018',
+            y: 364230.05+1085264.44,
+            drilldown: '2018-1'
+        },{
+            name: '2019',
+            y: 1464800.6+1599809.41,
+            drilldown: '2019-1'
+        },{
+            name: '2020',
+            y: 34239.33+596547.51,
+            drilldown: '2020-1'
+        },{
+            name: '2021',
+            y: 18007.84+11271
+,
+            drilldown: '2021-1'
+        }]
+    }],
+    })
+	});
+</script>
+<script> <!-- Place Holder for Drill trial -->
+	$(function () { 
+		var myChart = Highcharts.chart('main-ar-opp', {
+		      
+        
+			chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category',
+			title:{text:'ATTACHED SERVICE START DATE'}
+        },
+		yAxis: {
+			max: 5000000,
+			title: { text: 'Service Net $ Value'
+			}
+		},
+
+        legend: {
+            enabled: true
+        },
+		
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        color: 'white',
+                        textShadow: '0 0 2px black, 0 0 2px black'
+                    }
+                },
+                stacking: 'normal'
+            }
+        },
+
+        series: [{
+        name: 'EXPIRED ATTACHED SERVICE AGR PMC',
+        color: '#ffb3ff',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 2360.3,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 11216.27,
+            drilldown: '2016-1'
+        }]
+        },{
+        name: 'EXPIRED ATTACHED SERVICE AGR CRFP',
+        color: '#cc00cc',
+        data: [{
+            name: '2011',
+            y: 157533.23,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 156524.56,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 810478.67,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 406614.84,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 199589.65,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 199564.2,
+            drilldown: '2016-1'
+        }]
+        }, {
+        name: 'COVERED ATTACHED SERVICE AGR PMC',
+        color: '#99ccff',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 0,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 0,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 10681.08
+,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 411437.08
+,
+            drilldown: '2016-1'
+        }, {
+            name: '2017',
+            y: 0
+,
+            drilldown: '2017-1'
+        }, {
+            name: '2018',
+            y: 0
+,
+            drilldown: '2018-1'
+        }, {
+            name: '2019',
+            y: 0
+,
+            drilldown: '2019-1'
+        }, {
+            name: '2020',
+            y: 0
+,
+            drilldown: '2020-1'
+        }, {
+            name: '2021',
+            y: 0
+,
+            drilldown: '2021-1'
+        }]
+        },{
+        name: 'COVERED ATTACHED SERVICE AGR CRFP',
+        color: '#0066cc',
+        data: [{
+            name: '2011',
+            y: 0,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 0,
+            drilldown: '2012-1'
+        }, {
+            name: '2013',
+            y: 167939.67
+,
+            drilldown: '2013-1'
+        }, {
+            name: '2014',
+            y: 491731.68
+,
+            drilldown: '2014-1'
+        }, {
+            name: '2015',
+            y: 519216.69
+,
+            drilldown: '2015-1'
+        }, {
+            name: '2016',
+            y: 1589308.91,
+            drilldown: '2016-1'
+        }]
+    }],
+
+			
+    })
+	});
+</script>
+
+
+<script> <!-- Place Holder for Drill trial -->
+	$(function () { 
+		var myChart = Highcharts.chart('main1', {
+		      
+        
+			chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+
+        legend: {
+            enabled: true
+        },
+
+		
+		
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        color: 'white',
+                        textShadow: '0 0 2px black, 0 0 2px black'
+                    }
+                },
+                stacking: 'normal'
+            }
+        },
+
+        series: [{
+        name: 'UNCOVERED SA $ NET',
+        color: '#ff0066',
+        data: [{
+            name: '2011',
+            y: 910352.065
+
+,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 458967.82
+
+,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 928015.645
+
+,
+            drilldown: false
+        }, {
+            name: '2014',
+            y: 1301555.55
+
+,
+            drilldown: false
+        }, {
+            name: '2015',
+            y: 372936.85
+
+,
+            drilldown: false
+        }, {
+            name: '2016',
+            y: 23523.66
+
+,
+            drilldown: false
+        }, {
+            name: '2017',
+            y: 621.4
+
+,
+            drilldown: false
+        }]
+        }, {
+        name: 'COVERED IB SA$ NET',
+        color: '#33cccc',
+        data: [{
+            name: '2011',
+            y: 432578.14
+,
+            drilldown: false
+        }, {
+            name: '2012',
+            y: 1013443.94
+,
+            drilldown: false
+        }, {
+            name: '2013',
+            y: 1071255.117
+
+,
+            drilldown: false
+        }, {
+            name: '2014',
+            y: 2064183.324
+,
+            drilldown: false
+        }, {
+            name: '2015',
+            y: 1470425.8
+,
+            drilldown: false
+        }, {
+            name: '2016',
+            y: 2804794.08
+,
+            drilldown: false
+        }, {
+            name: '2017',
+            y: 710561.26
+,
+            drilldown: false
+        }]
+    }],
+
+			drilldown: {
+            activeDataLabelStyle: {
+                color: 'white',
+                textShadow: '0 0 2px black, 0 0 2px black'
+            },
+            series: [{
+                id: '2011-1',
+				type:'bubble',
+                name: '2011',
+                data: [{ x: 1785, y: 1785, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 64, z: 64, name: 'Dummy Name'},
+{ x: 386, y: 386, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 9463, z: 9463, name: 'Dummy Name'},
+{ x: 6285, y: 33143, z: 26857, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 2103, z: 2103, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 9, z: 9, name: 'Dummy Name'},
+{ x: 0, y: 26, z: 26, name: 'Dummy Name'},
+{ x: 0, y: 1467, z: 1467, name: 'Dummy Name'},
+{ x: 15343, y: 15343, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 216, z: 216, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 101246, y: 101352, z: 106, name: 'Dummy Name'},
+{ x: 4506, y: 7432, z: 2926, name: 'Dummy Name'},
+{ x: 2185, y: 3491, z: 1305, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 365, z: 365, name: 'Dummy Name'},
+{ x: 895, y: 895, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 31036, z: 31036, name: 'Dummy Name'},
+{ x: 0, y: 86, z: 86, name: 'Dummy Name'},
+{ x: 0, y: 327, z: 327, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 441, z: 441, name: 'Dummy Name'},
+{ x: 710, y: 1682, z: 971, name: 'Dummy Name'},
+{ x: 3310, y: 5958, z: 2647, name: 'Dummy Name'},
+{ x: 0, y: 1513, z: 1513, name: 'Dummy Name'},
+{ x: 13000, y: 16885, z: 3885, name: 'Dummy Name'},
+{ x: 0, y: 299, z: 299, name: 'Dummy Name'},
+{ x: 0, y: 1184, z: 1184, name: 'Dummy Name'},
+{ x: 0, y: 77, z: 77, name: 'Dummy Name'},
+{ x: 0, y: 7052, z: 7052, name: 'Dummy Name'},
+{ x: 0, y: 8, z: 8, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 6353, z: 6353, name: 'Dummy Name'},
+{ x: 9570, y: 12033, z: 2463, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 861, y: 1450, z: 588, name: 'Dummy Name'},
+{ x: 0, y: 118, z: 118, name: 'Dummy Name'},
+{ x: 3519, y: 3519, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 266, z: 266, name: 'Dummy Name'},
+{ x: 0, y: 10, z: 10, name: 'Dummy Name'},
+{ x: 19464, y: 34165, z: 14701, name: 'Dummy Name'},
+{ x: 0, y: 272, z: 272, name: 'Dummy Name'},
+{ x: 510, y: 510, z: 0, name: 'Dummy Name'},
+{ x: 2753, y: 2753, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 1467, z: 1467, name: 'Dummy Name'},
+{ x: 0, y: 1060, z: 1060, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 1467, z: 1467, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 74216, y: 425482, z: 351266, name: 'Dummy Name'},
+{ x: 0, y: 95, z: 95, name: 'Dummy Name'},
+{ x: 0, y: 93047, z: 93047, name: 'Dummy Name'},
+{ x: 0, y: 7454, z: 7454, name: 'Dummy Name'},
+{ x: 0, y: 898, z: 898, name: 'Dummy Name'},
+{ x: 0, y: 28, z: 28, name: 'Dummy Name'},
+{ x: 13481, y: 13481, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 1749, z: 1749, name: 'Dummy Name'},
+{ x: 5899, y: 5899, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 9, z: 9, name: 'Dummy Name'},
+{ x: 288, y: 288, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 781, z: 781, name: 'Dummy Name'},
+{ x: 0, y: 5, z: 5, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 8848, y: 8848, z: 0, name: 'Dummy Name'},
+{ x: 15499, y: 15598, z: 99, name: 'Dummy Name'},
+{ x: 0, y: 1309, z: 1309, name: 'Dummy Name'},
+{ x: 0, y: 1511, z: 1511, name: 'Dummy Name'},
+{ x: 24886, y: 24886, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 24834, z: 24834, name: 'Dummy Name'},
+{ x: 0, y: 363, z: 363, name: 'Dummy Name'},
+{ x: 0, y: 1720, z: 1720, name: 'Dummy Name'},
+{ x: 0, y: 8, z: 8, name: 'Dummy Name'},
+{ x: 51, y: 480, z: 429, name: 'Dummy Name'},
+{ x: 0, y: 2059, z: 2059, name: 'Dummy Name'},
+{ x: 0, y: 1356, z: 1356, name: 'Dummy Name'},
+{ x: 4284, y: 4430, z: 146, name: 'Dummy Name'},
+{ x: 68212, y: 282012, z: 213800, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 385, y: 639, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 5713, z: 5713, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 31723, z: 31723, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 909, z: 909, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 385, y: 688, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 860, z: 860, name: 'Dummy Name'},
+{ x: 0, y: 909, z: 909, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 557, z: 557, name: 'Dummy Name'},
+{ x: 0, y: 860, z: 860, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 1216, z: 1216, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 1213, z: 1213, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 606, z: 606, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 22872, y: 29094, z: 6221, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 860, z: 860, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 1642, z: 1642, name: 'Dummy Name'},
+{ x: 2021, y: 4735, z: 2713, name: 'Dummy Name'},
+{ x: 42, y: 42, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 508, z: 508, name: 'Dummy Name'},
+{ x: 385, y: 385, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 2400, z: 2400, name: 'Dummy Name'},
+{ x: 1403, y: 1403, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 370, z: 370, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 254, z: 254, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 303, z: 303, name: 'Dummy Name'},
+{ x: 0, y: 0, z: 0, name: 'Dummy Name'},
+{ x: 0, y: 1830, z: 1830, name: 'VITACOSTCOM INC'}
+]
+
+
+            }, {
+                id: '2012-1',
+                name: '2012',
+                data: [{
+                    name: 'OFFICE DEPOT INC',
+                    y: 112430.31,
+                    drilldown: 'depot'
+                },
+					['Dummy Name',50200.98],
+					['Dummy Name',34246.32],
+					['Dummy Name',32652.38],
+					['Dummy Name',19319.64],
+					['Dummy Name',14045.05],
+					['Dummy Name',13907.25],
+					['Dummy Name',6823.29],
+					['Dummy Name',6426.60],
+					['Dummy Name',5277.53]
+                ]
+            }, {
+                id: '2013-1',
+                name: '2013',
+                data: [
+				{
+                    name: 'Dummy Name',
+                    y: 98697.18,
+                    drilldown: 'depot'
+                },
+
+					['Dummy Name',28696.06],
+					['Dummy Name',21229.76],
+					['Dummy Name',21034.43],
+					['Dummy Name',20340.94],
+					['Dummy Name',14748.30],
+					['Dummy Name',11107.17],
+					['Dummy Name',9809.71],
+					['Dummy Name',9679.61],
+					['Dummy Name',9666.78]
+
+                ]
+            },{
+                id: '2014-1',
+                name: '2014',
+                data: [
+					{
+                    name: 'Dummy Name',
+                    y: 123326.7044,
+                    drilldown: 'depot'
+                },
+
+					['Dummy Name',98502.0865753421],
+					['Dummy Name',77897.8657534247],
+					['Dummy Name',48483.9375342467],
+					['Dummy Name',31702.6324657534],
+					['Dummy Name',23555.3967123288],
+					['Dummy Name',15926.7224657534],
+					['Dummy Name',12095.5260273973],
+					['Dummy Name',6045.7098630137],
+					['Dummy Name',4125.3493150685],
+					['Dummy Name',3777.08164383562],
+					['Dummy Name',2968.76712328764],
+					['Dummy Name',2529.88150684931],
+					['Dummy Name',2371.61684931507],
+					['Dummy Name',1892.64479452055],
+					['Dummy Name',1785.60369863014],
+					['Dummy Name',1699.30205479452],
+					['Dummy Name',1640.9294520548],
+					['Dummy Name',1620.19],
+					['Dummy Name',1604.78164383562]
+
+                ]
+            }, {
+                id: '2015-1',
+                name: '2015',
+                data: [
+{
+                    name: 'Dummy Name',
+                    y: 240431.18,
+                    drilldown: 'depot'
+                },
+					['Dummy Name',98430.06],
+					['Dummy Name',77897.86],
+					['Dummy Name',48166.80],
+					['Dummy Name',44206.42],
+					['Dummy Name',41395.68],
+					['Dummy Name',39424.22],
+					['Dummy Name',31744.36],
+					['Dummy Name',23590.83],
+					['Dummy Name',19431.75]
+
+                ]
+            }, {
+                id: '2016-1',
+                name: '2016',
+                data: [
+{
+                    name: 'Dummy Name',
+                    y: 240431.18,
+                    drilldown: 'depot'
+                },
+					['Dummy Name',55927.49],
+					['Dummy Name',54822.42],
+					['Dummy Name',27019.55],
+					['Dummy Name',17203.73],
+					['Dummy Name',15658.93],
+					['Dummy Name',14063.49],
+					['Dummy Name',13380.19],
+					['Dummy Name',11478.65],
+					['Dummy Name',11230.96]
+
+                ]
+            }, {id: 'depot',
+                name: 'Dummy Name',
+                data: [
+					['Dummy Name',4417.80],
+					['Dummy Name',7668.37],
+					['Dummy Name',3872.86],
+					['Dummy Name',1583.53],
+					['Dummy Name',111.91],
+					{
+                    name: 'Dummy Name',
+                    y: 105672.21,
+                    drilldown: 'arch'
+                }
+
+                ]
+            },{id: 'arch',
+                name: 'Architecture',
+                data: [
+					['Dummy Name',429.854109589041],
+					['Dummy Name',30456],
+					['Dummy Name',73652.0547945205],
+					['Dummy Name',1134.30136986301]
+
+                ]
+            }]
+        }
+    })
+	});
+</script>
+<script>
+Highcharts.chart('container', {
+
+    chart: {
+        type: 'bubble',
+        plotBorderWidth: 1,
+        zoomType: 'xy'
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    title: {
+        text: ''
+    },
+
+
+    xAxis: 
+	{
+		
+		maxPadding: 0.2,
+        gridLineWidth: 1,
+        title: {
+            text: 'TOTAL NETWORK Propensity to be ACTIVE score'
+        },
+        labels: {
+            format: '{value}'
+        },
+
+    },
+
+    yAxis: {
+
+		startOnTick: false,
+        endOnTick: false,
+        title: {
+            text: 'EXPIRED Propensity to be ACTIVE SCORE'
+        },
+        labels: {
+            format: '{value}'
+        },
+        maxPadding: 0.2,
+        
+    },
+
+    tooltip: {
+        useHTML: true,
+        headerFormat: '<table>',
+        pointFormat: '<tr><th colspan="2"><h4>{point.name}</h4></th></tr>' +
+            '<tr><th>Total Network Score:</th><td>{point.x}</td></tr>' +
+            '<tr><th>Expired Score:</th><td>{point.y}</td></tr>' +
+            '<tr><th>EXPIRED SERV AGGR OPP:</th><td>${point.z}</td></tr>',
+        footerFormat: '</table>',
+        followPointer: true
+    },
+
+    plotOptions: {
+        series: {
+            colorByPoint: true,
+			dataLabels: {
+                enabled: false,
+                format: '{point.name}'
+            }
+        }
+    },
+
+    series: [{
+        data: [
+            { x: 128, y: 80, z: 189554.285, name: 'Dummy Name'},
+{ x: 85, y: 148, z: 68254.3, name: 'Dummy Name'},
+{ x: 128, y: 92, z: 45532.83, name: 'Dummy Name'},
+{ x: 62, y: 89, z: 37275.41, name: 'Dummy Name'},
+{ x: 68, y: 81, z: 33063.34, name: 'Dummy Name'},
+{ x: 75, y: 98, z: 24834.25, name: 'Dummy Name'},
+{ x: 39, y: 77, z: 20208.54, name: 'Dummy Name'},
+{ x: 163, y: 80, z: 17638.61, name: 'Dummy Name'},
+{ x: 0, y: 74, z: 13108.97, name: 'Dummy Name'},
+{ x: 0, y: 50, z: 12080.86, name: 'Dummy Name'},
+{ x: 89, y: 92, z: 12063.67, name: 'Dummy Name'},
+{ x: 65, y: 53, z: 11149.85, name: 'Dummy Name'},
+{ x: 76, y: 124, z: 11014.3, name: 'Dummy Name'},
+{ x: 77, y: 96, z: 10601.19, name: 'Dummy Name'},
+{ x: 98, y: 68, z: 8570.88, name: 'Dummy Name'},
+{ x: 77, y: 46, z: 7432.78, name: 'Dummy Name'},
+{ x: 72, y: 43, z: 6864.02, name: 'Dummy Name'},
+{ x: 91, y: 89, z: 6568.8, name: 'Dummy Name'},
+{ x: 39, y: 59, z: 5736, name: 'Dummy Name'},
+{ x: 77, y: 107, z: 5372.35, name: 'Dummy Name'},
+{ x: 89, y: 65, z: 5306.33, name: 'Dummy Name'},
+{ x: 123, y: 77, z: 4806.91, name: 'Dummy Name'},
+{ x: 72, y: 126, z: 4289.36, name: 'Dummy Name'},
+{ x: 101, y: 15, z: 3950.56, name: 'Dummy Name'},
+{ x: 39, y: 52, z: 3657.54, name: 'Dummy Name'},
+{ x: 108, y: 48, z: 3473.13, name: 'Dummy Name'},
+{ x: 95, y: 95, z: 3354.1, name: 'Dummy Name'},
+{ x: 224, y: 84, z: 2955.45, name: 'Dummy Name'},
+{ x: 70, y: 96, z: 2623.1, name: 'Dummy Name'},
+{ x: 124, y: 42, z: 2550, name: 'Dummy Name'},
+{ x: 59, y: 60, z: 2498.12, name: 'Dummy Name'},
+{ x: 76, y: 78, z: 2453.95, name: 'Dummy Name'},
+{ x: 91, y: 95, z: 2265.06, name: 'Dummy Name'},
+{ x: 77, y: 85, z: 2197.05, name: 'Dummy Name'},
+{ x: 77, y: 86, z: 2114.86, name: 'Dummy Name'},
+{ x: 62, y: 60, z: 2039.15, name: 'Dummy Name'},
+{ x: 90, y: 105, z: 1960.21, name: 'Dummy Name'},
+{ x: 77, y: 182, z: 1956.7, name: 'Dummy Name'},
+{ x: 77, y: 68, z: 1875.1, name: 'Dummy Name'},
+{ x: 65, y: 37, z: 1720.4, name: 'Dummy Name'},
+{ x: 77, y: 0, z: 1636.06, name: 'Dummy Name'},
+{ x: 61, y: 0, z: 1406.33, name: 'Dummy Name'},
+{ x: 65, y: 78, z: 1328, name: 'Dummy Name'},
+{ x: 77, y: 153, z: 1248, name: 'Dummy Name'},
+{ x: 77, y: 42, z: 1194.66, name: 'Dummy Name'},
+{ x: 77, y: 39, z: 1043.46, name: 'Dummy Name'},
+{ x: 77, y: 46, z: 1007.42, name: 'Dummy Name'},
+{ x: 77, y: 61, z: 912.9, name: 'Dummy Name'},
+{ x: 77, y: 99, z: 898.27, name: 'Dummy Name'},
+{ x: 77, y: 153, z: 884, name: 'Dummy Name'},
+{ x: 77, y: 130, z: 861.9, name: 'Dummy Name'},
+{ x: 123, y: 69, z: 781.18, name: 'Dummy Name'},
+{ x: 77, y: 0, z: 714, name: 'Dummy Name'},
+{ x: 77, y: 57, z: 657.05, name: 'Dummy Name'},
+{ x: 77, y: 39, z: 598.4, name: 'Dummy Name'},
+{ x: 77, y: 120, z: 543.07, name: 'Dummy Name'},
+{ x: 77, y: 76, z: 543.07, name: 'Dummy Name'},
+{ x: 77, y: 105, z: 509.15, name: 'CROWN CITY SUITES'}
+        ]
+    }]
+});
+</script>
+<script>
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+</script>
+<style>
+
+.glyphicon.glyphicon-chevron-right{
+   color:black;
+}
+.glyphicon.glyphicon-chevron-left{
+   color:black;
+}
+.jumbotron {
+    background-color:#e6f2ff !important; 
+}
+.container-fluid {
+  padding: 0px !important;
+}
+.navbar-fixed-left {
+  width: 150px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left > li {
+  float: none;  /* Cancel default li float: left */
+  width: 145px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -40px;
+  margin-left: 130px;
+  
+  hr {
+  width: 70%;
+  color: black;
+}
+/* Collapsing Navbar Styles */
+
+@media(min-width:768px) {
+  .navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-default.affix {
+    padding: 0;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
+.nav .open > a
+{
+    background:#759ad6;
+    //put styling
+}
+body {
+      position: relative; 
+  }
+
+</style>
+</body>
+</html>
+
+
+
