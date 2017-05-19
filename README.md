@@ -23,4 +23,4 @@ Being able to show the seller which of their opportunities was highly likely to 
 
 ### Building an interactive Demo
 To demonstrate how the analytics could be leveraged, I built a web app that contained visualizations and explanations of the analysis so the stakeholders could interact with the solution and dream of the possibilities. I used a combination of HTML, CSS, jQuery, Bootstrap and Highcharts.js. All of the data points are hard coded into the HTML file.
-You can find my interactive visualization here:
+You can find my interactive visualization here: https://rmbeltran.github.io/DataAnalyticsViz1/
